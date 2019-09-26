@@ -1,3 +1,106 @@
 body{
+    font-family: sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 1fr 0.5fr 8fr 1fr;
+    grid-template-areas: 
+        ". name ."
+        ". desc ."
+        ". survey-form ."
+        ". . ."
+}
+#title{
+    text-align: center;
+    grid-area: name;
+}
+#description{
+    text-align: center;
+    grid-area: desc;
+}
+#survey-form{
+    background-color: lightgrey;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-radius: 5%;
+    grid-area: survey-form;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-row-gap: 0.5%;
+    grid-template-areas: 
+        "name-label name"
+        "email-label email"
+        "number-label number"
+        "dropdown-label dropdown"
+        "radio-buttons-label radio-buttons"
+        "checkboxes-label checkboxes"
+        "textarea-label textarea"
+        "submit submit"
+        
+}
+#name-label{
+    grid-area: name-label;
+}
+#name{
+    grid-area: name;
+}
+#email-label{
+    grid-area: email-label;
+}
+#email{
+    grid-area: email;
+}
+#number-label{
+    grid-area: number-label;
+}
+#number{
+    grid-area: number;
+}
+#dropdown-label{
+    grid-area: dropdown-label;
+}
+#dropdown{
+    grid-area: dropdown;
+    height: 50%;
+    width: 52%;
+}
+#radio-buttons-label{
+    grid-area: radio-buttons-label;
+}
+
+#radio{
+    grid-area: radio-buttons;
     
+}
+#checkboxes-label{
+    grid-area: checkboxes-label;
+}
+#checkboxes{
+    grid-area: checkboxes;
+}
+#textarea-label{
+    grid-area: textarea-label;
+}
+#textarea{
+    grid-area: textarea;
+}
+#submit{
+    grid-area: submit;
+    width: 40%;
+    justify-self: center; 
+}
+.description{
+    justify-self: end;
+    padding: 2%;
+}
+.input-field{
+    width: 50%;
+    height: 40%;
+    justfy-self: start;
+}
+#radio1{
+ display: inline-block;
+ justify-self: start;
 }

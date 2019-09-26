@@ -23,42 +23,44 @@
                 <input id="number" class="input-field" type="number" min="1" max="120" required placeholder="Enter your number"> 
 
                 <label id="dropdown-label" class="description" for="dropdown">Dropdown: </label>
-                <select id="dropdown">
+                <select id="dropdown" class="input-field">
                     <option value="option1">Option 1</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>
                 </select>
 
 
-                <label for="radio-buttons">Check one of radio buttons </label>
-                <label for="radio1">
-                    <input id="radio1" type="radio" name="radio-buttons" value="radio1">radio 1
-                </label>
-                <label for="radio2">
-                    <input id="radio2" type="radio" name="radio-buttons" value="radio2">radio 2
-                </label>
-                <label for="radio3">
-                    <input id="radio3" type="radio" name="radio-buttons" value="radio3">radio 3
-                </label>
-
-                <label for="checkboxes">Check one of radio buttons </label>
-                <label for="checkbox1">
-                    <input id="checkbox1" type="checkbox" name="checkboxes" value="checkbox1">checkbox 1
-                </label>
-                <label for="checkbox2">
-                    <input id="checkbox" type="checkbox" name="checkboxes" value="checkbox2">checkbox 2
-                </label>
-                <label for="checkbox">
-                    <input id="checkbox3" type="checkbox" name="checkboxes" value="checkbox3">checkbox 3
-                </label>
-
-                <label for="textarea">put your thoughts here</label>
-                <textarea id="textarea" cols="15" rows="4" placeholder="put your thoughts here" >
-                    cosik
+                <label id="radio-buttons-label" class="description" for="radio-buttons">Check one of radio buttons </label>
+                <div id="radio" class="input-field">
+                    <label for="radio1">
+                        <input id="radio1" type="radio" name="radio-buttons" value="radio1">radio 1
+                    </label><br>
+                    <label for="radio2">
+                        <input id="radio2" type="radio" name="radio-buttons" value="radio2">radio 2
+                    </label><br>
+                    <label for="radio3">
+                        <input id="radio3" type="radio" name="radio-buttons" value="radio3">radio 3
+                    </label>
+                </div>
+                <label id="checkboxes-label" class="description" for="checkboxes">Check one of radio buttons </label>
+                <div id="checkboxes" class="input-field">
+                    <label  for="checkbox1">
+                        <input id="checkbox1" type="checkbox" name="checkboxes" value="checkbox1">checkbox 1
+                    </label><br>
+                    <label for="checkbox2">
+                        <input id="checkbox2" type="checkbox" name="checkboxes" value="checkbox2">checkbox 2
+                    </label><br>
+                    <label for="checkbox">
+                        <input id="checkbox3" type="checkbox" name="checkboxes" value="checkbox3">checkbox 3
+                    </label>
+                </div>
+                <label id="textarea-label" class="description" for="textarea">put your thoughts here</label>
+                <textarea id="textarea"  class="input-field" cols="15" rows="4" placeholder="put your thoughts here" >
+                    
                 </textarea>
-                
+
                 <input id="submit" type="submit" name="submit" value="Submit">
-                
+
             </form>
 
         </main>
